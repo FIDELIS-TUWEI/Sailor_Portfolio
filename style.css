@@ -114,11 +114,11 @@ a:hover:after {
 
 .bar {
     display: block;
-    width: 25px;
-    height: 2px;
-    margin: 5px auto;
+    width: 35px;
+    height: 5px;
+    margin: 6px auto;
     -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
     background-color: yellow;
 }
 
@@ -127,11 +127,11 @@ a:hover:after {
 }
 
 .hamburger--menu.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(11px) rotate(45deg);
 }
 
 .hamburger--menu.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-11px) rotate(-45deg);
 }
 
 /**
