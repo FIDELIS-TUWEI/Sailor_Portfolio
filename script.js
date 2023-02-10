@@ -12,3 +12,4 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener('click',
     hamburger.classList.remove('active');
     nav.classList.remove('active');
 }));
+
