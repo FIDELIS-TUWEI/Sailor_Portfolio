@@ -156,6 +156,11 @@ a:hover:after {
     font-family: 'Gentium Book Plus', serif;
 }
 
+.pdf--view {
+    width: 100%;
+    height: 300px;
+}
+
 h2 {
     color: lightgreen;
     border-bottom: 2px solid yellow;
