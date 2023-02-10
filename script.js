@@ -10,3 +10,14 @@ document.querySelectorAll(".list--item").forEach(n => n.addEventListener('click'
     hamburgerMenu.classList.remove("active");
     menu.classList.remove("active");
 }));
+
+
+// loader 
+const loader = document.getElementById('load');
+
+document.body.style.overflow = "hidden";
+
+setTimeout(() => {
+    loader.style.cssText = "opacity: 0; z-index: -999999995555599955;"
+    document.body.style.overflow = "auto"
+}, 2000);

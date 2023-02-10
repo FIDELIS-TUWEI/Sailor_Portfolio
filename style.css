@@ -11,7 +11,8 @@ html {
 }
 
 body {
-    background-color: lightgrey;
+    background-color: #202c37;
+    color: #fff;
 }
 
 img {
@@ -52,7 +53,7 @@ img {
     right: 0;
     box-shadow: 0 1px 4px rgba(0,0,0,0.25);
     z-index: 3;
-    background-color: lightblue;
+    background-color: #202c37;
 }
 
 .list--item {
@@ -70,8 +71,8 @@ img {
 }
 
 .home {
-    border-bottom: 1px solid green;
-    color: green;
+    border-bottom: 1px solid yellow;
+    color: lightgreen;
 }
 
 .hamburger--menu {
@@ -86,7 +87,7 @@ img {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #000;
+    background-color: yellow;
 }
 
 .hamburger--menu.active .bar:nth-child(2) {
@@ -99,4 +100,116 @@ img {
 
 .hamburger--menu.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 0 20px;
+}
+
+.text--container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h2 {
+    color: lightgreen;
+    border-bottom: 2px solid yellow;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: lightgreen;
+}
+
+h4 {
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.read__link {
+    font-weight: 500;
+    padding: 5px;
+    width: 100px;
+    margin-top: 20px;
+    color: lightgreen;
+}
+
+#contact--form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+#about {
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 10px;
+    
+    border: 2px solid rgba(0,0,0,0.25);
+    min-height: 50px;
+}
+
+
+.load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #202c37;
+    position: fixed;
+    width: 100%;
+    z-index: 999999995555599955;
+    top: 0;
+    left: 0;
+    transition: all 1s linear;
+}
+
+.load span {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 3px solid yellow;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-left-color: transparent;
+    animation: rotate 1s linear infinite;
+    -webkit-animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
 }
