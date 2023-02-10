@@ -189,8 +189,7 @@ a:hover:after {
 }
 
 .pdf--view {
-    width: 100%;
-    height: 300px;
+    max-width: 100%;
 }
 
 h2 {
