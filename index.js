@@ -1,124 +1,85 @@
+// Mobile first design
+
 // Header
 const header = document.createElement('header');
 document.body.append(header);
 
 // Nav Bar
 const navBar = document.createElement('nav');
-navBar.className = 'nav__bar';
+navBar.className = 'nav--bar'
 header.appendChild(navBar);
 
 // Logo
-const logo = document.createElement('a');
-logo.className = 'nav__brand';
-logo.innerHTML = `Frank`;
-navBar.appendChild(logo)
+const navLogo = document.createElement('img');
+navLogo.setAttribute('src', 'logo.png');
+navLogo.className = 'nav--logo'
+navBar.appendChild(navLogo);
 
-// Nav Menu - ul
-const ulNav = document.createElement('ul');
-ulNav.className = 'nav__menu';
-navBar.appendChild(ulNav);
+// Nav Menu
+const navMenu = document.createElement('ul');
+navMenu.className = 'nav--menu';
+navBar.appendChild(navMenu);
 
-// Nav list - li
+// List item 1
 const list1 = document.createElement('li');
-list1.className = 'nav__item';
-ulNav.appendChild(list1);
+list1.className = 'list--item';
+navMenu.appendChild(list1);
 
-// Link 1 - a
-const home = document.createElement('a');
-home.className = 'nav__link';
-home.setAttribute('href', '#')
-home.innerHTML = `Home`;
-list1.appendChild(home);
+// anchor link 1
+const anchor1 = document.createElement('a');
+anchor1.className = 'link'
+list1.appendChild(anchor1);
 
-// List 2
-const list2 = document.createElement('li');
-list2.className = 'nav__item';
-ulNav.appendChild(list2);
-
-// Link 2 - a
-const about = document.createElement('a');
-about.className = 'nav__link';
-about.setAttribute('href', '#section')
-about.innerHTML = `About`;
-list2.appendChild(about);
-
-// List 3 - li
-const list3 = document.createElement('li');
-list3.className = 'nav__item';
-ulNav.appendChild(list3);
-
-// Link 3 - a
-const contact = document.createElement('a');
-contact.className = 'nav__link';
-contact.setAttribute('href', '#')
-contact.innerHTML = `Contact Me`;
-list3.appendChild(contact);
-
-// Hamburger 
-const hamburgerMenu = document.createElement('div');
-hamburgerMenu.className ='hamburger';
-navBar.appendChild(hamburgerMenu);
-
-// Span - bars
+// span link1
 const span1 = document.createElement('span');
-span1.className ='bar';
-hamburgerMenu.appendChild(span1);
+span1.className = 'home'
+span1.textContent = 'Home';
+anchor1.appendChild(span1);
 
-// Span 2
-const span2 = document.createElement('span');
-span2.className ='bar';
-hamburgerMenu.appendChild(span2);
+// List item 2
+const list2 = document.createElement('li');
+list2.className = 'list--item';
+navMenu.appendChild(list2);
 
-// Span 3
-const span3 = document.createElement('span');
-span3.className = 'bar';
-hamburgerMenu.appendChild(span3);
+// anchor link 2
+const anchor2 = document.createElement('a');
+anchor2.textContent = 'About'
+list2.appendChild(anchor2);
 
-// Hero Section
-const hero = document.createElement('main');
-hero.className = 'hero--section'
-document.body.append(hero);
+// list item 3
+const list3 = document.createElement('li');
+list3.className = 'list--item';
+navMenu.appendChild(list3);
 
-// heroDiv
-const heroDiv = document.createElement('div');
-heroDiv.className = 'heroDiv'
-hero.appendChild(heroDiv);
+// anchor 3
+const anchor3 = document.createElement('a');
+anchor3.textContent = 'Resume';
+list3.appendChild(anchor3);
 
-// hero image
-const heroImage = document.createElement('img');
-heroImage.setAttribute('src', 'deck.jpg');
-heroDiv.appendChild(heroImage);
+// List item 4
+const list4 = document.createElement('li');
+list4.className = 'list--item';
+navMenu.appendChild(list4);
 
+// anchor 4
+const anchor4 = document.createElement('a');
+anchor4.textContent = 'Contact';
+list4.appendChild(anchor4);
 
-// about section
-const section = document.createElement('section');
-section.className = `section`
-hero.appendChild(section);
+// Hamburger menu
+const hamburger = document.createElement('div');
+hamburger.className = 'hamburger--menu';
+navBar.appendChild(hamburger);
 
-// description
-const title = document.createElement('h3');
-title.textContent = `I am Frank, a Marine Engineer`;
-section.appendChild(title);
+// hamburger bar
+const bar1 = document.createElement('span');
+bar1.className = 'bar';
+hamburger.appendChild(bar1);
 
-// paragraph
-const paragraph = document.createElement('p');
-paragraph.textContent = `I am a certified seafarer from Dar es salaam Maritime...`;
-section.appendChild(paragraph);
+const bar2 = document.createElement('span');
+bar2.className = 'bar';
+hamburger.appendChild(bar2);
 
-// read more div
-const readDiv = document.createElement('div');
-readDiv.className = 'moreDiv'
-section.appendChild(readDiv);
-
-// read more button
-const button = document.createElement('button');
-button.className = 'link';
-button.textContent = `Read More >>`
-readDiv.appendChild(button);
-
-// read more
-const paragraph2 = document.createElement('p');
-paragraph2.textContent = `I have worked as a sailor for three years with experience in both deck and engineering department`;
-paragraph2.className = 'more'
-paragraph2.style.display = 'none'
-readDiv.appendChild(paragraph2);
+const bar3 = document.createElement('span');
+bar3.className = 'bar';
+hamburger.appendChild(bar3);

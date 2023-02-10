@@ -1,25 +1,12 @@
-// Acivate Hamburger
-const hamburger = document.querySelector(".hamburger");
-const nav = document.querySelector(".nav__menu");
+const hamburgerMenu = document.querySelector('.hamburger--menu');
+const menu = document.querySelector('.nav--menu');
 
-// Event listener 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    nav.classList.toggle('active');
+hamburgerMenu.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle("active");
+    menu.classList.toggle("active");
 });
 
-document.querySelectorAll(".nav__link").forEach(n => n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    nav.classList.remove('active');
+document.querySelectorAll(".list--item").forEach(n => n.addEventListener('click', () => {
+    hamburgerMenu.classList.remove("active");
+    menu.classList.remove("active");
 }));
-
-// Read more button
-const buttonLink = document.querySelector('.link');
-const moreRead = document.querySelector('more');
-
-// button event handler
-buttonLink.addEventListener('click', () => {
-    console.log('clicked');
-    document.querySelector('.more').style.display = 'block'
-
-});
