@@ -13,3 +13,13 @@ document.querySelectorAll(".nav__link").forEach(n => n.addEventListener('click',
     nav.classList.remove('active');
 }));
 
+// Read more button
+const buttonLink = document.querySelector('.link');
+const moreRead = document.querySelector('more');
+
+// button event handler
+buttonLink.addEventListener('click', () => {
+    console.log('clicked');
+    document.querySelector('.more').style.display = 'block'
+
+});
