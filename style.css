@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap');
+
 *,
 *::before,
 *::after {
@@ -13,10 +16,39 @@ html {
 body {
     background-color: #202c37;
     color: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 
 img {
     max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background: lightgreen;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: lightgreen;
+}
+
+a:hover:after {
+    width: 100%;
 }
 
 .nav--logo {
@@ -119,16 +151,23 @@ img {
     justify-content: flex-start;
 }
 
+.more--text {
+    font-weight: 400;
+    font-family: 'Gentium Book Plus', serif;
+}
+
 h2 {
     color: lightgreen;
     border-bottom: 2px solid yellow;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
 h3 {
     font-size: 1.5rem;
     letter-spacing: 1px;
     color: lightgreen;
+    font-weight: 600;
 }
 
 h4 {

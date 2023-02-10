@@ -131,7 +131,7 @@ textContent.appendChild(paragraph);
 // Read more link
 const readMore = document.createElement('a');
 readMore.className = 'read__link';
-readMore.innerHTML = `Read more `;
+readMore.innerHTML = `More `;
 readMore.setAttribute('href', '#about')
 textContent.appendChild(readMore);
 
