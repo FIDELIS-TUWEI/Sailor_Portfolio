@@ -84,7 +84,6 @@ a:hover:after {
 .nav--menu.active {
     right: 0;
     box-shadow: 0 1px 4px rgba(0,0,0,0.25);
-    z-index: 3;
     background-color: #202c37;
 }
 
@@ -127,11 +126,11 @@ a:hover:after {
 }
 
 .hamburger--menu.active .bar:nth-child(1) {
-    transform: translateY(11px) rotate(45deg);
+    transform: translateY(11px) rotate(-45deg);
 }
 
 .hamburger--menu.active .bar:nth-child(3) {
-    transform: translateY(-11px) rotate(-45deg);
+    transform: translateY(-11px) rotate(45deg);
 }
 
 /**
