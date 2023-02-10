@@ -9,6 +9,18 @@ document.body.append(load);
 const loaderSpan = document.createElement('span');
 load.appendChild(loaderSpan);
 
+// scroll to top arrow
+const arrowUp = document.createElement('div');
+arrowUp.className = 'top';
+arrowUp.setAttribute('id', 'top')
+document.body.append(arrowUp);
+
+// arrow up
+const upArrow = document.createElement('i');
+upArrow.setAttribute('class', "fa-solid fa-arrow-up")
+//upArrow.setAttribute('aria-hidden', 'true');
+arrowUp.appendChild(upArrow);
+
 // Header
 const header = document.createElement('header');
 document.body.append(header);
